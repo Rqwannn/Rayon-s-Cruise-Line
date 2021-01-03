@@ -1,0 +1,324 @@
+@media only screen and ( max-width: 376px ){
+    body{
+        width: 100%;
+    }
+
+    #side-bar-menu{
+        display: block;
+    }
+
+    #check:checked ~ .side-bar a:nth-child(1){
+        display: block;
+    }
+
+    #check:checked ~ .side-bar{
+        left: 0;
+        z-index: 2000;
+        width: 100%;
+    }
+
+    #check:checked ~ .side-bar a{
+        font-size: 20px;
+        width: 105%;
+    }
+    
+    #check:checked ~ .side-top i{
+        display: flex;
+    }
+    
+    #check:checked ~ .navbar{
+        width: 88%;
+        left: 102%;
+    }
+
+    #check:checked ~ .navbar .menu-links{
+        left: 50px;
+    }
+
+    #check:checked ~ .navbar .menu-toggle{
+        left: 1rem;
+    }
+
+    #check:checked ~ .navbar .button-btn-admin{
+        margin-left: 250px;
+    }
+
+    #check:checked ~ .navbar #garis-navbar{
+        margin-left: 420px;
+    }
+
+    #check:checked ~ .navbar .button-btn{
+        right: 10px;
+    }
+
+    #check:checked ~ .side-bar a span{
+        margin-left: -5px;
+        font-size: 13px;
+    }
+    
+    #check:checked ~ .side-bar span{
+        display: initial;
+    }
+    
+    #check:checked ~ .side-bar span:nth-child(6){
+        color: #ff512f;
+    }
+
+    #check:checked ~ .side-bar a{
+        width: 130%;
+        font-size: 18px;
+        margin-left: 100px;
+    }
+
+    #check:checked ~ .side-bar .side-top{
+        margin-left: 0;
+    }
+
+    #check:checked ~ .side-bar .center img{
+        margin-left: 215px;
+    }
+
+    .navbar .menu-toggle{
+        margin-left: -15px;
+    }
+
+    #garis-navbar{
+        display: none;
+    }
+
+    .navbar{
+        width: 100%;
+        left: 0;
+    }
+
+    .side-top{
+        margin-left: 80px;
+        transition: 0.6s;
+    }
+
+    .side-top i{
+        margin: 0 35px;
+        font-size: 20px;
+    }
+
+    #fa-info-circle{
+        font-size: 22px;
+    }
+
+    .side-bar a{
+        margin-left: 117px;
+    }
+
+    .side-bar{
+        left: -300px;
+    }
+
+    .side-bar .center img{
+        display: flex;
+        width: 70px; 
+        height: 70px;
+        margin: 0 0 10px 25px;
+        transition: 0.6s;
+    }
+
+    .menu-links{
+        display: none;
+    }
+
+    .navbar .button-btn{
+        margin-right: -5%;
+        transition: 0.6s;
+    }
+
+    .navbar .button-btn-admin input{
+        display: none;
+    }
+
+    .dasbord-section-1{
+        height: 160vh;
+    }
+
+    .dasbord-section-1 .dasbord-header h1{
+        left: 45px;
+    }
+    
+    .dasbord-section-1 .dasbord-content{
+        margin-left: 40px;
+    }
+
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card:nth-child(1){
+        width: 270px;
+        height: 154px;
+        margin-bottom: 30px;
+    }
+    
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card:nth-child(2){
+        width: 270px;
+        height: 154px;
+        margin-bottom: 30px;
+    }
+    
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card:nth-child(3){
+        width: 270px;
+        height: 154px;
+        margin-bottom: 30px;
+    }
+    
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card:nth-child(4){
+        width: 270px;
+        height: 160px;
+        margin-bottom: 30px;
+    }
+    
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card:nth-child(5){
+        width: 270px;
+        height: 154px;
+        margin-bottom: 30px;
+    }
+
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card .right-dasbord i{
+        margin-left: 65px;
+    }
+
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card .right-dasbord #fa-chart-bar{
+        margin-left: 100px;
+    }
+
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card .right-dasbord #fa-user-alt{
+        margin-left: 140px;
+    }
+
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card button{
+        transform: translateY(30px);
+        height: 50px;
+    }
+
+    .pelabuhan-section-1{
+        height: 450vh;
+    }
+    
+    .pelabuhan-section-1 .pelabuhan-header h1{
+        left: 45px;
+        font-size: 2.5rem;
+    }
+    
+    .pelabuhan-section-1 .pelabuhan-header .input-header{
+        margin-left: 45px;
+    }
+
+    .pelabuhan-section-1 .pelabuhan-header .input-header button{
+        transform: translate(427px,-42px);
+    }
+
+    .pelabuhan-section-1 .pelabuhan-content table{
+        margin-left: 45px;
+    }
+
+    .tambahStaff-section-1{
+        height: 100vh;
+    }
+
+    .tambahStaff-section-1 .tambahStaff-header h1{
+        left: 45px;
+    }
+
+    .tambahStaff-section-1 .container .img-login img{
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 150px;
+    }
+
+    .tambahStaff-section-1 .container .img-login label{
+        top: 27%;
+        left: 11%;
+    }
+
+    .tambahStaff-section-1 .container .form-login{
+        top: 35%;
+        left: -35%;
+    }
+
+    .footer{
+        width: 100%;
+        height: 27vh;
+    }
+
+    .footer .container .left-side{
+        top: 40px;
+        left: 30px;
+    }
+
+    .footer .container .right-side{
+        top: 40px;
+        left: 220px;
+        width: 100%;
+    }
+
+    #garis-footer{
+        width: 105%;
+        top: 100px;
+        left: 30px;
+        transform: rotate(0deg);
+    }
+
+    .wrapper{
+        left: -470px;
+        top: 130px;
+    }
+
+    /* STAFF */
+
+    .transaksi-berhasil-dasbord .transaksi-berhasil-header h1{
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+
+    .staff-dasbord-2 .dasbord-2-header h1{
+        font-size: 1.7rem;
+    }
+    
+    .staff-dasbord .staff-header h1{
+        margin-left: 40px;
+    }
+    
+    .staff-dasbord .card-wrap{
+        margin-left: 40px;
+    }
+
+    .staff-dasbord-2{
+        margin-left: 10px;
+    }
+
+    .staff-dasbord-2 .dasbord-2-header h1{
+        transform: translate(20px, 30px);
+    }
+
+    #myTable_filter label{
+        transform: translateX(-20px);
+    }
+    
+    #myTable{
+        width: 90vw; 
+        margin-left: 7px;
+        transform: translateY(20px);
+    }
+    
+    .dataTables_info{
+        transform: translateX(-70px);
+        margin-top: 30px;
+    }
+    
+    .pagination{
+        transform: translate(-10px, 30px);
+        cursor: pointer;
+    }
+
+    .footer-3{
+        height: 10vh;
+    }
+
+    .footer-left h5{
+        left: 50px;
+    }
+}

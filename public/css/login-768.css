@@ -1,0 +1,43 @@
+@media only screen and (max-width: 768px){
+    
+    #pesan-salah{
+        transform: translate(500px, -460px);
+    }
+    
+    .container{
+        transform: translateY(-27.5px);
+    }
+    
+    .container .box{
+        width: 100%;
+        height: 104.5vh;
+        border-radius: 0;
+    }
+    
+    .box .header-box .fas{
+        top: 20px;
+    }
+    
+    .box .header-box .far{
+        top: 20px;
+    }
+    
+    .box .left img{
+        transform: translate(15px, 30px);
+    }
+    
+    .box .left .social-media ul{
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+    
+    .box .right{
+        top: 25%;
+    }
+
+    .box .paragraf-center{
+        position: absolute;
+        top: 86%;
+        left: 58%;
+    }
+}

@@ -1,0 +1,448 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#pesan-salah,
+#email-sama,
+#username-sama,
+#password-sama{
+    color: red;
+    font-size: 14px;
+    font-family: 'Sniglet', cursive;
+    font-style: italic;
+    position: absolute;
+}
+
+#username-sama{
+    left: 795px;
+    top: 295px;
+}
+
+#email-sama{
+    left: 795px;
+    top: 225px;
+}
+
+#password-sama{
+    left: 795px;
+    top: 365px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(rgba(43,55,96,1),rgba(11,16,45,1));
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1999;
+    box-shadow: 0 1px 5px #000;
+}
+
+.navbar .logo img{
+    transform: translateY(12px);
+    width: 90px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.navbar .menu-links{
+    position: absolute;
+    top: 30px;
+    left: 650px;   
+}
+
+.navbar .menu-links ul{
+    display: flex;
+    transform: translateX(-30px);
+}
+
+.navbar .menu-links ul li{
+    margin: 0 1rem 0 2rem;
+    list-style: none;
+}
+
+.navbar .menu-links ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    transition: 0.7s;
+    font-family: 'Sniglet', cursive;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.navbar .menu-links ul li .color{
+    color: #1da1f2;
+}
+
+.navbar .menu-links ul li .color2{
+    color: #000;
+}
+
+.navbar .menu-links ul li a:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1da1f2;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+
+.navbar .menu-links ul li a:hover:after{
+    width: 100%;
+}
+
+.navbar .menu-links ul li:hover a{
+    color: #1da1f2;
+}
+
+.navbar .button-btn{
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    cursor: pointer;
+}
+
+.navbar .button-btn button{
+    border: none;
+    outline: none;
+}
+
+.navbar .button-btn .masuk{
+    background: transparent;
+    border: 2px solid #1da1f2;
+    color: #1da1f2;
+    border-radius: 5px;
+    padding: 8px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.navbar .button-btn .masuk:hover{
+    background: #1da1f2;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.navbar .button-btn .daftar{
+    background: #1da1f2;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.7s;
+}
+
+.navbar .button-btn .daftar:hover{
+    background: transparent;
+    border: 2px solid #1da1f2;
+    color: #1da1f2;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(25px);
+}
+
+.container .box{
+	position: relative;
+    background: #fff;
+    width: 800px;
+    height: 550px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box .box-side{
+    width: 90%;
+    height: 90%;
+}
+
+.box .header-box{
+	position: relative;
+    top: 25px;
+    left: 70px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.box .header-box .fas{
+	position: absolute;
+    left: 10px;
+    font-size: 29px;
+    transition: 0.7s;
+}
+
+.box .header-box .far{
+	position: absolute;
+    right: 10px;
+    font-size: 28px;
+    transition: 0.7s;
+}
+
+.box .header-box .fas:hover,
+.box .header-box .far:hover{
+    opacity: 0.5;
+}
+
+.box .left{
+	position: absolute;
+	left: 20px;
+	top: 14%;
+}
+
+.box .left img{
+	width: 400px;
+    height: 400px;
+    transform: translateX(15px);
+}
+
+.box .left .social-media{
+    left: 20px;
+    bottom: 10px;
+}
+
+.box .left .social-media ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box .left .social-media ul li{
+    list-style: none;
+}
+
+.box .left .social-media ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    background: #fff;
+    box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2),
+                 2px 2px 5px rgba(0,0,0,0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    color: #e2e2e2;
+    line-height: 30px;
+    transition: .6s;
+}
+
+.box .left .social-media ul li .fab{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.box .left .social-media ul li #facebook{
+    padding: 0 5px;
+}
+
+.box .left .social-media ul li a:before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 50%;
+    border: 2px solid rgba(0,0,0,0.1);
+}
+
+.box .left .social-media ul li:nth-child(1) a:before{
+    background: #1877f2;
+}
+
+.box .left .social-media ul li:nth-child(2) a:before{
+    background: #1da1f2;
+}
+
+.box .left .social-media ul li:nth-child(3) a:before{
+    background: #ea4c89;
+}
+
+.box .left .social-media ul li:nth-child(4) a:before{
+    background: #000;
+}
+
+.box .left .social-media ul li a:hover,
+.box .left .social-media ul li a:focus{
+    color: #999;
+    transform: translateY(-20px);
+    box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2),
+                 2px 24px 10px rgba(0,0,0,0.2),
+                 inset -1px -1px 2px rgba(0,0,0,0.2),
+                 inset 2px 2px 5px rgba(0,0,0,0.2);;
+}
+
+.box .paragraf-center{
+    font-family: 'Sniglet', cursive;
+    position: absolute;
+    left: 410px;
+    font-weight: 400;
+    bottom: 40px;
+    z-index: 1;
+}
+
+.box .right h4{
+    font-size: 1.4rem;
+	margin: 1.4rem 0;
+	transform: translateY(-35px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+	letter-spacing: 1px;
+	text-align: center;
+    text-transform: uppercase;
+}
+
+.box .right .paragraf{
+	color: red;
+	font-style: italic;
+    transform: translateY(-35px);
+}
+
+.box .right{
+	position: absolute;
+	right: 50px;
+	top: 20%;
+}
+
+.box form{
+    transform: translateY(-35px);
+}
+
+.box .inputimg{
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.box .inputimg label{
+    position: absolute;
+	top: -18px;
+	left: 0px;
+	padding: 10px 0;
+	font-size: 14px;
+	color: #000;
+	pointer-events: none;
+	font-family: 'Sniglet', cursive;
+    letter-spacing: 1px;
+}
+
+.box .inputimg input[type="file"]{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    pointer-events: initial;
+    font-family: 'Sniglet', cursive;
+    margin-top: 20px;
+}
+
+.box .inputbox{
+	position: relative;
+}
+
+.box .inputbox input{
+	width: 100%;
+	cursor: pointer;
+	padding: 10px 0;
+	font-size: 16px;
+	color:#000;
+	margin-bottom: 30px;
+	border:none;
+	border-bottom: 2px solid #000;
+	outline: none;
+	background: transparent;
+	position: relative;
+}
+
+.box .inputbox label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 14px;
+	color: #000;
+	pointer-events: none;
+	transition: 0.5s;
+	font-family: 'Sniglet', cursive;
+	letter-spacing: 1px;
+}
+
+.box .inputbox input:focus{
+	border-bottom: 3px solid #03a9f4;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label{
+	position: absolute;
+	top: -18px;
+	left: 0;
+	color: #03a9f4;
+	font-size:12px;
+	letter-spacing: 0;
+}
+
+.box .right button{
+	border:none;
+	outline: none;
+	color: #ffffff;
+	font-size: 18px;
+	width: 100%;
+	background: #03a9f4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 7px;
+	margin-bottom: 10px;
+	transition: 0.5s;
+}
+
+.box .right button:hover{
+	box-shadow: 0px 1px 18px #03a9f4;
+	background: #03a9f4;
+}
+
+.box .right h5{
+	font-family: 'Sniglet', cursive;
+	font-size: 13px;
+	font-weight: 400;
+	cursor: pointer;
+	margin-bottom: 6rem;
+}
+
+.box .right a{
+	color: #000;
+    text-decoration: none;
+}
+
+
+.box .right p{
+	font-family: 'Sniglet', cursive;
+	font-size: 13px;
+	font-weight: 400;
+    cursor: pointer;
+    margin-bottom: -10px;
+}
+
+.box .right h3{
+    font-family: 'Sniglet', cursive;
+	font-size: 13px;
+	font-weight: 400;
+    cursor: pointer;
+    font-size: 13px;
+}

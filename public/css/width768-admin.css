@@ -1,0 +1,422 @@
+@media only screen and ( max-width: 769px){
+    #check:checked ~ .side-bar{
+        left: 0;
+        z-index: 2000;
+        width: 24%;
+    }
+
+    #check:checked ~ .side-bar a{
+        font-size: 20px;
+        width: 105%;
+    }
+    
+    #check:checked ~ .side-top i{
+        display: flex;
+    }
+    
+    #check:checked ~ .navbar{
+        width: 88%;
+        left: 24%;
+    }
+
+    #check:checked ~ .navbar .menu-links{
+        left: 50px;
+    }
+
+    #check:checked ~ .navbar .menu-toggle{
+        left: 1rem;
+    }
+
+    #check:checked ~ .navbar .button-btn-admin{
+        margin-left: 250px;
+    }
+
+    #check:checked ~ .navbar #garis-navbar{
+        margin-left: 420px;
+    }
+
+    #check:checked ~ .navbar .button-btn{
+        right: 110px;
+    }
+
+    #check:checked ~ .side-bar a span{
+        margin-left: -5px;
+        font-size: 13px;
+    }
+    
+    #check:checked ~ .side-bar span{
+        display: initial;
+    }
+    
+    #check:checked ~ .side-bar span:nth-child(6){
+        color: #ff512f;
+    }
+
+    #check:checked ~ .side-bar a{
+        width: 130%;
+        font-size: 18px;
+        margin-left: -30px;
+    }
+
+    #check:checked ~ .side-bar .side-top{
+        margin-left: 0;
+    }
+
+    .navbar .menu-toggle{
+        transition: 0.6s;
+    }
+
+    .side-bar{
+        left: -200px;
+        width: 36.5%;
+        height: 100vh;
+        transition: 0.6s;
+    }
+
+    .side-top{
+        margin-left: 90px;
+        transition: 0.6s;
+    }
+
+    .side-top i{
+        margin: 0 35px;
+        font-size: 20px;
+    }
+
+    #fa-info-circle{
+        font-size: 22px;
+    }
+    
+    .side-bar .center{
+        transform: translateY(-70px);
+        margin-bottom: -15px;
+    }
+    
+    .side-bar h4{
+        margin-right: 15px;
+    }
+    
+    .side-bar a{
+        margin-left: 186px;
+        padding-left: 40px;
+        font-size: 18px;
+        width: 130%;
+    }
+    
+    .side-bar .center img{
+        width: 90px; 
+        height: 90px;
+        margin: 0 0 10px 35px;
+        transition: 0.6s;
+    }
+
+    .navbar{
+        width: 90%;
+        left: 10%;
+    }
+
+    .navbar .menu-links{
+        position: absolute;
+        top: 30px;
+        left: 100px;
+        transition: 0.6s;
+    }
+    
+    .navbar .menu-links ul{
+        display: flex;
+    }
+    
+    .navbar .menu-links ul li{
+        margin: 2px 0rem 0 2rem;
+        list-style: none;
+    }
+    
+    .navbar .menu-links ul li a{
+        font-size: 18px;
+    }
+
+    .navbar .button-btn-admin{
+        margin-left: 300px;
+        transition: 0.6s;
+    }
+
+    .navbar .button-btn{
+        right: 50px;
+        transition: 0.6s;
+    }
+
+    #garis-navbar{
+        margin-left: 485px;
+        transition: 0.6s;
+    }
+    
+    .navbar .button-btn-admin input{
+        width: 150px;
+    }
+    
+    .navbar .button-btn-admin i{
+        transform: translate(-25px, 2px);
+        font-size: 17px;
+        color: #fff;
+    }
+    
+    .navbar .button-btn-admin input::placeholder{
+        color: #fff;
+        font-family: 'Sniglet', cursive;
+        font-weight: 400;
+    }
+
+    .dasbord-section-1{
+        width: 100%;
+        height: 250vh;
+    }
+    
+    .dasbord-section-1 .dasbord-header h1{
+        left: 125px;
+        font-size: 2.5rem;
+    }
+    
+    .dasbord-section-1 .dasbord-content{
+        margin-left: 130px;
+    }
+
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card:nth-child(1){
+        width: 620px;
+    }
+    
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card:nth-child(2){
+        width: 620px;
+    }
+    
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card:nth-child(3){
+        width: 620px;
+    }
+    
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card:nth-child(4){
+        width: 620px;
+    }
+    
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card:nth-child(5){
+        width: 620px;
+    }
+
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card .right-dasbord i{
+        margin-left: 280px;
+    }
+
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card .right-dasbord #fa-chart-bar{
+        margin-left: 310px;
+    }
+
+    .dasbord-section-1 .dasbord-content .dasbord-content-flex .dasbord-card .right-dasbord #fa-user-alt{
+        margin-left: 350px;
+    }
+
+    .pelabuhan-section-1{
+        height: 650vh;
+        margin-bottom: 20vh;
+    }
+
+    #pelabuhan-section-edit{
+        height: 170vh;
+        margin-bottom: 20vh;
+    }
+    
+    .pelabuhan-section-1 .pelabuhan-header h1{
+        left: 125px;
+        font-size: 2.5rem;
+    }
+    
+    .pelabuhan-section-1 .pelabuhan-header .input-header{
+        margin-left: 125px;
+        transform: translateY(180px);
+    }
+    
+    .pelabuhan-section-1 .pelabuhan-header .input-header input{
+        width: 400px;
+    }
+
+    .pelabuhan-section-1 .pelabuhan-content table{
+        margin-left: 125px;
+        width: 575px;
+    }
+    
+    .pelabuhan-section-1 .pelabuhan-content .tabel-header td{
+        padding: 0 5px;
+    }
+    
+    .pelabuhan-section-1 .pelabuhan-content table tr td{
+        padding: 0 5px;
+    }
+
+    .tambahData button{
+       width: 60px;
+    }
+
+    .footer{
+        height: 23vh;
+    }
+    
+    .footer .container .left-side{
+        left: 125px;
+    }
+    
+    .footer .container .right-side{
+        left: 350px;
+    }
+    
+    .footer .container .left-side h3,
+    .footer .container .right-side h3{
+        font-size: 20px;
+    }
+    
+    .footer .container .left-side p,
+    .footer .container .right-side p{
+        font-size: 7px;
+        margin-left: 40px;
+    }
+
+    #fa-shopware-edit{
+        margin-right: 17px;
+    }
+    
+    .tambahStaff-section-1 .tambahStaff-header h1{
+        top: 150px;
+        left: 125px;
+    }
+    
+    .tambahStaff-section-1 .container{
+        left: 125px;
+    }
+    
+    .tambahStaff-section-1 .container .img-login img{
+        width: 150px;
+        height: 200px;
+        left: 0;
+    }
+    
+    .tambahStaff-section-1 .container .img-login label{
+        top: 52%;
+        left: 5%;
+    }
+    
+    .tambahStaff-section-1 .container .form-login{
+        top: 13%;
+        right: -5%;
+    }
+    
+    .tambahStaff-section-1 .container .form-login .form-flex input{
+        width: 150px;
+    }
+    
+    .tambahStaff-section-1 .container .form-login button{
+        width: 173px;
+    }
+    
+    .wrapper{
+        left: -50px;
+        top: 45px;
+    }
+    
+    .wrapper label{
+        font-size: 15px;
+    }
+    
+    .wrapper .button{
+        width: 40px;
+        height: 40px;
+        float: left;
+    }
+    
+    .wrapper .button:nth-child(1):hover .icon{
+        color: #1877f2;
+        background: #1877f2;
+    }
+    
+    .wrapper .button:nth-child(2):hover .icon{
+        color: #1da1f2;
+        background: #1da1f2;
+    }
+    
+    .wrapper .button:nth-child(3):hover .icon{
+        color: #ea4c89;
+        background: #ea4c89;
+    }
+    
+    .wrapper .button .icon{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .wrapper .button .icon i{
+        font-size: 18px;
+        line-height: 40px;
+    }
+    
+    .wrapper .button:hover{
+        width: 150px;
+    }
+
+    #garis-footer{
+        left: 450px;
+        top: 70px;
+    }
+    
+    #loader{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: 9999;
+    }
+    
+    #loader img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 450px;
+        height: 450px;
+    }
+
+    /* STAFF */
+
+    .staff-dasbord .staff-header h1{
+        margin-left: 100px;
+    }
+
+    .staff-dasbord .card-wrap{
+        margin-left: 100px;
+    }
+
+    .staff-dasbord .card-content{
+        margin-top: 20px;
+    }
+
+    #myTable_filter label{
+        transform: translate(180px, -40px);
+    }
+    
+    #myTable{
+        width: 90vw; 
+        margin-left: 0;
+        transform: translateY(20px);
+    }
+    
+    .dataTables_info{
+        transform: translateX(-232px);
+        margin-top: 30px;
+    }
+    
+    .pagination{
+        transform: translate(-52px, -30px);
+        cursor: pointer;
+    }
+
+    .footer-3{
+        height: 10vh;
+    }
+}

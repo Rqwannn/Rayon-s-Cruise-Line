@@ -1,0 +1,56 @@
+@media only screen and (max-width: 376px){
+
+    body{
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+     
+    #pesan-salah{
+        transform: translate(70px,-785px);
+    }
+    
+    .container{
+        transform: translateY(-27.5px);
+    }
+    
+    .container .box{
+        width: 100%;
+        height: 110vh;
+    }
+    
+    .box .header-box .fas{
+        left: -50px;
+    }
+    
+    .box .header-box .far{
+        right: 20px;
+    }
+    
+    .box .left img{
+        display: none;
+    }
+    
+    .box .left .social-media ul{
+        margin-top: 135%;
+        transform: translateX(-10px);
+    }
+    
+    .box .left .social-media ul li{
+        margin-left: 10px;
+    }
+    
+    .box .right{
+        right: 100px;
+        top: 10%;
+    }
+    
+    .box .left .social-media ul li a{
+        font-size: 15px;
+    }
+
+    .box .paragraf-center{
+        position: absolute;
+        top: 53%;
+        left: 40%;
+    }
+}

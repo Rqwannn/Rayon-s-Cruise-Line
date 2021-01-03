@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-chat{
+    display: flex;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+/* 
+::-webkit-scrollbar-track{
+    background-color: #343a40;
+} */
+
+::-webkit-scrollbar-thumb{
+    background: #6c757d;
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+.left-chat{
+    width: 35%;
+    height: 100%;
+}
+
+.left-header-chat{
+    background: #F1EFF7;
+    width: 99.9%;
+    height: 70px;
+    position: relative;
+    border-right: .7px solid gray;
+}
+
+.left-header-content img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.left-header-icon{
+    display: flex;
+    color: grey;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.left-header-icon i:nth-child(1){
+    position: absolute;
+    right: 27%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-header-icon i:nth-child(2){
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-header-icon i:nth-child(3){
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-search-chat{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background: #F1EFF7;
+}
+
+.left-line-top{
+    width: 100%;
+    height: .7px;
+    background: gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.left-line-bottom{
+    width: 100%;
+    height: .7px;
+    background: gray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.left-search{
+    width: 80%;
+    height: 35px;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.left-search-position{
+    position: relative;
+}
+
+.left-search i{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.left-search input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.left-search input::placeholder{
+    color: gray;
+    padding-right: 50px;
+}
+
+.left-content-chat{
+    overflow: auto;
+    width: 99.9%;
+    height: 490px;
+    position: relative;
+    border-right: .7px solid gray;
+}
+
+.left-card-content{
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    transition: 0.5s;    
+}
+
+.left-card-content:hover{
+    background: #F1EFF7;
+}
+
+.left-card-content .left-card-img img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-card-content .rigth-card-status{
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    border-bottom: .7px solid gray;
+    position: relative;
+}
+
+.left-card-content .rigth-card-status .right-card-position{
+    margin-top: 11%;
+    transform: translateY(-50%);
+}
+
+.left-card-content .rigth-card-status .right-card-position h4{
+    font-weight: 400;
+}
+
+.left-card-content .rigth-card-status .right-card-position h5{
+    margin-top: 10px;
+    color: gray;
+    font-weight: 300;
+}
+
+.left-card-content .rigth-card-status .right-card-position-2 h5{
+    color: gray;
+    font-weight: 300;
+    position: absolute;
+    right: 20px;
+    top: 23%;
+}
+
+.right-chat{
+    width: 65%;
+    height: 100%;
+}
+
+.right-header-chat{
+    width: 100%;
+    height: 70px;
+    background: #F1EFF7;
+    border-bottom: .7px solid gray;
+    position: relative;
+    cursor: pointer;
+}
+
+.right-position-img{
+    display: flex;
+}
+
+.right-position-img img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.right-position-text{
+    margin-left: 12%;
+}
+
+.right-position-text h4{
+    font-size: 16px;
+    margin-top: 70%;
+    transform: translateY(-50%);
+}
+
+.right-position-text h5{
+    font-size: 12px;
+    margin-top: -5px;
+    color: green;
+    font-weight: 300;
+}
+
+.right-header-icon{
+    display: flex;
+    color: grey;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.right-header-icon i:nth-child(1){
+    position: absolute;
+    right: 12.5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-header-icon i:nth-child(2){
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5%;
+}
+
+.right-content-chat{
+    width: 100%;
+    height: 485px;
+    overflow-x: hidden;
+}
+
+.right-otherPeople-chat{
+    background: #F1EFF7;
+    padding: 11px 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px 30px 20px 50px;
+}
+
+.right-otherPeople-chat h4{
+    font-weight: 400;
+    font-size: 14px;
+    width: 85%;
+}
+
+.right-otherPeople-chat h5{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: -15px;
+    text-align: right;
+}
+
+.right-own-chat{
+    background:#92E9B3;
+    padding: 11px 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px 30px 20px 350px;
+}
+
+.right-own-chat h4{
+    font-weight: 400;
+    font-size: 14px;
+    width: 85%;
+}
+
+.right-own-chat h5{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: -15px;
+    text-align: right;
+}
+
+.right-input-chat{
+    width: 100%;
+    height: 54.6px;
+    background: #F1EFF7;
+    position: relative;
+}
+
+.right-input-chat i:nth-child(1){
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: gray;
+    cursor: pointer;
+}
+
+.right-input-chat i:nth-child(2){
+    position: absolute;
+    left: 11.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: gray;
+    cursor: pointer;
+}
+
+.right-input-chat button{
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 92.5%;
+    top: 32.5%;
+    background: transparent;
+    transform: translateY(-50%) rotate(45deg);
+    font-size: 25px;
+    color: gray;
+    cursor: pointer;
+}
+
+.right-input-chat input{
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 65%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0 25px;
+}
+
+.right-input-chat input::placeholder{
+    color: gray;
+}

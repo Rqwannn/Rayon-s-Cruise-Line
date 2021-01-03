@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.verifikasi-ulang{
+    width: 100%;
+    height: 100vh;
+}
+
+.verifikasi-ulang-card{
+    width: 60%;
+    height: 150px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.verifikasi-ulang-card-2{
+    width: 60%;
+    height: 150px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.verifikasi-ulang-header{
+    width: 100%;
+    height: 50px;
+    background: #F1EFF7;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.verifikasi-ulang-header-2{
+    width: 100%;
+    height: 50px;
+    background: #1877f2;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.verifikasi-ulang-header h5,
+.verifikasi-ulang-header-2 h5{
+    line-height: 50px;
+    margin: 0 20px;
+    font-weight: 400;
+}
+
+.verifikasi-ulang-header-2 h5{
+    color: #fff;
+}
+
+.verifikasi-ulang-header button,
+.verifikasi-ulang-header-2 button{
+    background: transparent;
+    border: none;
+    outline: none;
+    pointer-events: none;
+    margin: 0 20px
+}
+
+.verifikasi-ulang-header-2 button{
+    color: #fff;
+}
+
+.verifikasi-ulang-content{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    border-top: none;
+    position: relative;
+}
+
+.verifikasi-ulang-position,
+.verifikasi-ulang-position-2{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.verifikasi-ulang-position-2{
+    display: block;
+}
+
+.verifikasi-ulang-content h5{
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.verifikasi-ulang-content button{
+    color: #1877f2;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.right-verifikasi-ulang a{
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: 400;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.right-verifikasi-ulang a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,1 @@
+<script src="<?php echo BASEURL; ?>/js/verifikasiEmail.js"></script>
