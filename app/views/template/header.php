@@ -38,7 +38,6 @@ if(mysqli_num_rows($userSelection) === 1){
     <link rel="icon" href="<?php echo BASEURL; ?>/img/logo-icon.png">
     <title><?php echo $data["judul"]; ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo BASEURL; ?>/css/Rayon.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo BASEURL; ?>/css/verifikasiulang.css">
     <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <script src="https://kit.fontawesome.com/d1a508a7c1.js" crossorigin="anonymous"></script>

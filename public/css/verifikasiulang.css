@@ -27,17 +27,7 @@
     transform: translateX(-50%);
 }
 
-
 .verifikasi-ulang-header{
-    width: 100%;
-    height: 50px;
-    background: #F1EFF7;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-}
-
-.verifikasi-ulang-header-2{
     width: 100%;
     height: 50px;
     background: #1877f2;
@@ -46,19 +36,17 @@
     border: 1px solid black;
 }
 
-.verifikasi-ulang-header h5,
-.verifikasi-ulang-header-2 h5{
+.verifikasi-ulang-header h5{
     line-height: 50px;
     margin: 0 20px;
     font-weight: 400;
 }
 
-.verifikasi-ulang-header-2 h5{
+.verifikasi-ulang-header h5{
     color: #fff;
 }
 
-.verifikasi-ulang-header button,
-.verifikasi-ulang-header-2 button{
+.verifikasi-ulang-header button{
     background: transparent;
     border: none;
     outline: none;
@@ -66,7 +54,7 @@
     margin: 0 20px
 }
 
-.verifikasi-ulang-header-2 button{
+.verifikasi-ulang-header button{
     color: #fff;
 }
 
