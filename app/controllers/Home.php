@@ -66,7 +66,7 @@ class Home Extends Controller{
                 $mail->setFrom($email, "Rayon`s Cruise Line");
                 $mail->addAddress($email);
                 $mail->Subject = ("$email ('Verifikasi Email')");
-                $mail->Body = "Silahkan Verifikasi Email Anda = " . IP . '/verify/' . $id . "/" . $token;
+                $mail->Body = "Silahkan Verifikasi Email Anda = " . IPWIFI . '/verify/' . $id . "/" . $token;
 
                 
                 if($mail->send()){

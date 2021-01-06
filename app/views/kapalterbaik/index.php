@@ -7,7 +7,7 @@
     <div class="dasbord-2-header">
         <h1>Kapal Terbaik</h1>
     </div>
-        <hr class="line-dasbord-2">
+    <hr class="line-dasbord-2">
     <!-- <div class="upper-left-dasbord">
         <h4>Tampilkan</h4>
         <input type="number" maxlength="2" value="10">
@@ -34,13 +34,13 @@
                     <td><?php echo $result["nama_kapal"]; ?></td>
                     <td><?php echo $result["kelas_pelayaran"]; ?></td>
                     <td>
-                    <a href="<?php echo BASEURL; ?>/UbahTambahKapal/<?php echo $result["id"] ?>" class="ubahData">
-                        <button type="submit" name="ubahData">Ubah</button>
-                    </a>
-                    <a href="<?php echo BASEURL; ?>/kapalterbaik/hapus/<?php echo $result["id"]; ?>" class="hapusData">
-                        <button type="submit" name="hapusData" onclick="return confirm('Yakin!')">Hapus</button>
-                    </a>
-                </td>
+                        <a href="<?php echo BASEURL; ?>/UbahTambahKapal/<?php echo $result["id"] ?>" class="ubahData">
+                            <button type="submit" name="ubahData">Ubah</button>
+                        </a>
+                        <a href="<?php echo BASEURL; ?>/kapalterbaik/hapus/<?php echo $result["id"]; ?>" class="hapusData">
+                            <button type="submit" name="hapusData" onclick="return confirm('Yakin!')">Hapus</button>
+                        </a>
+                    </td>
                 </tr>
                 <?php $i++; ?>
             <?php endforeach; ?>
