@@ -7,7 +7,7 @@
     <div class="dasbord-2-header">
         <h1>Staff</h1>
     </div>
-        <hr class="line-dasbord-2">
+    <hr class="line-dasbord-2">
     <!-- <div class="upper-left-dasbord">
         <h4>Tampilkan</h4>
         <input type="number" maxlength="2" value="10">
@@ -34,13 +34,13 @@
                     <td><?php echo $result["email"]; ?></td>
                     <td><?php echo $result["nama_depan"]; ?> <?php echo $result["nama_belakang"]; ?></td>
                     <td>
-                    <a href="<?php echo BASEURL; ?>/UbahTambahStaff/<?php echo $result["id"] ?>" class="ubahData">
-                        <button type="submit" name="tambahData">Ubah</button>
-                    </a>
-                    <a href="<?php echo BASEURL; ?>/staff/hapus/<?php echo $result["id"]; ?>" class="hapusData">
-                        <button type="submit" name="hapusData" onclick="return confirm('Yakin!')">Hapus</button>
-                    </a>
-                </td>
+                        <a href="<?php echo BASEURL; ?>/UbahTambahStaff/<?php echo $result["id"] ?>" class="ubahData">
+                            <button type="submit" name="tambahData">Ubah</button>
+                        </a>
+                        <a href="<?php echo BASEURL; ?>/staff/hapus/<?php echo $result["id"]; ?>" class="hapusData">
+                            <button type="submit" name="hapusData" onclick="return confirm('Yakin!')">Hapus</button>
+                        </a>
+                    </td>
                 </tr>
                 <?php $i++; ?>
             <?php endforeach; ?>
