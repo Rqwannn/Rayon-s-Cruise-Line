@@ -1,8 +1,10 @@
-<?php 
+<?php
 
 
-class StaffPage Extends Controller{
-    public function index(){
+class StaffPage extends Controller
+{
+    public function index()
+    {
         $data = [
             "judul" => "Staff",
             "active" => "staffpage"
@@ -12,10 +14,10 @@ class StaffPage Extends Controller{
         $result = $this->model("Data_model")->getAllTransaksiNumberThree();
         $menunggu = [];
         $gagal = [];
-        foreach($result as $results){
-            if($results["confirmed"] == 0 && strtotime(date("Y-m-d")) <= strtotime($results['tanggal'])){
+        foreach ($result as $results) {
+            if ($results["confirmed"] == 0 && strtotime(date("Y-m-d")) <= strtotime($results['tanggal'])) {
                 $menunggu[] = $results;
-            } else if($results["confirmed"] == 0 && strtotime(date("Y-m-d")) >= strtotime($results['tanggal'])) {
+            } else if ($results["confirmed"] == 0 && strtotime(date("Y-m-d")) >= strtotime($results['tanggal'])) {
                 $gagal[] = $results;
             }
         }
@@ -27,13 +29,14 @@ class StaffPage Extends Controller{
         $this->view("template/footer3");
     }
 
-    public function Logout($id){
-        if($this->model("Data_model")->LogoutUser($id)){
+    public function Logout($id)
+    {
+        if ($this->model("Data_model")->LogoutUser($id)) {
             echo "<script>
             alert('Data User berhasil dilogout!!')
             document.location.href = 'http://localhost/MVC-KapalLaut/public/staffpage';
             </script>";
-        } else{
+        } else {
             echo "<script>
             alert('Data User Gagal dilogout!')
             document.location.href = 'http://localhost/MVC-KapalLaut/public/staffpage';

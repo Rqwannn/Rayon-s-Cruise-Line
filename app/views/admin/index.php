@@ -1,13 +1,13 @@
 <section class="staff-dasbord">
     <div class="staff-header">
-        <h1><i class="fas fa-tachometer-alt mr-2"></i>Dashbord</h1>
+        <h1><i class="fas fa-tachometer-alt mr-2"></i><span class="Dasbord">Dashbord Manager</span></h1>
     </div>
     <div class="card-wrap">
         <div class="card-content">
             <div class="card-dasbord">
                 <div class="left-card-dasbord">
-                  <h2><?php echo count($data["pelabuhan"]); ?></h2>
-                  <h3>Pelabuhan</h3>
+                    <h2 class="PelabuhanManager"><?php echo count($data["pelabuhan"]); ?></h2>
+                    <h3>Pelabuhan</h3>
                 </div>
                 <div class="right-card-dasbord">
                     <i class="fas fa-ship margin-card-1" style="color: #1666cf;"></i>
@@ -24,8 +24,8 @@
         <div class="card-content color-card-2">
             <div class="card-dasbord">
                 <div class="left-card-dasbord">
-                  <h2><?php echo count($data["pemesanan"]); ?></h2>
-                  <h3>Pemesanan Tiket</h3>
+                    <h2 class="PemesananManager"><?php echo count($data["pemesanan"]); ?></h2>
+                    <h3>Pemesanan Tiket</h3>
                 </div>
                 <div class="right-card-dasbord">
                     <i class="fas fa-ticket-alt margin-card-2" style="color: #d33b1c;"></i>
@@ -42,8 +42,8 @@
         <div class="card-content color-card-3">
             <div class="card-dasbord">
                 <div class="left-card-dasbord">
-                  <h2><?php echo count($data["staff"]); ?></h2>
-                  <h3>Staff</h3>
+                    <h2 class="StaffManager"><?php echo count($data["staff"]); ?></h2>
+                    <h3>Staff</h3>
                 </div>
                 <div class="right-card-dasbord">
                     <i class="fas fa-user-alt margin-card-3" style="color: #17ac04;"></i><span>
@@ -60,8 +60,8 @@
         <div class="card-content color-card-4">
             <div class="card-dasbord">
                 <div class="left-card-dasbord">
-                   <h2><?php echo count($data["kapal"]); ?></h2>
-                   <h3>Kapal Terbaik</h3>
+                    <h2 class="KapalManager"><?php echo count($data["kapal"]); ?></h2>
+                    <h3>Kapal Terbaik</h3>
                 </div>
                 <div class="right-card-dasbord">
                     <i class="far fa-chart-bar margin-card-4" style="color: #ad0300;"></i><span>
@@ -78,8 +78,8 @@
         <div class="card-content color-card-5">
             <div class="card-dasbord">
                 <div class="left-card-dasbord">
-                   <h2>1</h2>
-                   <h3>Tambah Staff</h3>
+                    <h2>1</h2>
+                    <h3>Tambah Staff</h3>
                 </div>
                 <div class="right-card-dasbord">
                     <i class="fas fa-user-friends margin-card-5" style="color: #ff9501;"></i><span>
@@ -95,7 +95,18 @@
         </div>
     </div>
 </section>
+<section class="staff-diagram">
+    <div class="row">
+        <div class="col-md-6">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="col-md-6">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+</section>
 <section class="staff-dasbord-2">
+    <input type="hidden" class="ManagerValue" value="<?php echo count($data["manager"]) ?>">
     <div class="dasbord-2-header">
         <h1>Staff</h1>
     </div>
@@ -126,7 +137,7 @@
                     <td><?php echo $i; ?></td>
                     <td><?php echo $result["email"]; ?></td>
                     <td><?php echo $result["nama_depan"]; ?> <?php echo $result["nama_belakang"]; ?></td>
-                    <td style="color: <?php echo($result["status"] == 1) ? "green" : "red" ?>;"><?php echo($result["status"] == 1) ? "Online" : "Offline" ?></td>
+                    <td style="color: <?php echo ($result["status"] == 1) ? "green" : "red" ?>;"><?php echo ($result["status"] == 1) ? "Online" : "Offline" ?></td>
                     <td>
                         <a href="<?php echo BASEURL; ?>/admin/Logout/<?php echo $result["id"]; ?>" class="hapusData">
                             <button type="submit" name="hapusData" onclick="return confirm('Yakin!')">Logout</button>

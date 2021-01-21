@@ -1,7 +1,7 @@
-<?php 
+<?php
 
 
-$conn = mysqli_connect("localhost","root","","rayon");
+$conn = mysqli_connect("localhost", "root", "", "rayon");
 $data = $_GET["id_pemesanan"];
 $pesan = mysqli_query($conn, "SELECT * FROM data_pemesanan WHERE id = $data");
 $results = mysqli_fetch_assoc($pesan);

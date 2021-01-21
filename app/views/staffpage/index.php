@@ -1,12 +1,12 @@
 <section class="staff-dasbord">
     <div class="staff-header">
-    <h1><i class="fas fa-tachometer-alt mr-2"></i>Dashbord</h1>
+        <h1><i class="fas fa-tachometer-alt mr-2"></i><span class="Dasbord">Dashbord Staff</span></h1>
     </div>
     <div class="card-wrap">
         <div class="card-content">
             <div class="card-dasbord">
                 <div class="left-card-dasbord">
-                    <h2><?php echo count($data["data"]); ?></h2>
+                    <h2 class="PesanTiket"><?php echo count($data["data"]); ?></h2>
                     <h3>Pesan Tiket</h3>
                 </div>
                 <div class="right-card-dasbord">
@@ -24,7 +24,7 @@
         <div class="card-content color-card-2">
             <div class="card-dasbord">
                 <div class="left-card-dasbord">
-                    <h2><?php echo count($data["berhasil"]); ?></h2>
+                    <h2 class="TransaksiBerhasil"><?php echo count($data["berhasil"]); ?></h2>
                     <h3 style="width: 150%;">Transaksi Berhasil</h3>
                 </div>
                 <div class="right-card-dasbord">
@@ -42,7 +42,7 @@
         <div class="card-content color-card-3">
             <div class="card-dasbord">
                 <div class="left-card-dasbord">
-                    <h2><?php echo count($data["menunggu"]); ?></h2>
+                    <h2 class="TransaksiMenunggu"><?php echo count($data["menunggu"]); ?></h2>
                     <h3 style="width: 150%;">Transaksi Menunggu</h3>
                 </div>
                 <div class="right-card-dasbord">
@@ -60,7 +60,7 @@
         <div class="card-content color-card-4">
             <div class="card-dasbord">
                 <div class="left-card-dasbord">
-                    <h2><?php echo count($data["gagal"]); ?></h2>
+                    <h2 class="TransaksiGagal"><?php echo count($data["gagal"]); ?></h2>
                     <h3 style="width: 150%;">Transaksi Gagal</h3>
                 </div>
                 <div class="right-card-dasbord">
@@ -74,6 +74,16 @@
                     </div>
                 </a>
             </div>
+        </div>
+    </div>
+</section>
+<section class="staff-diagram">
+    <div class="row">
+        <div class="col-md-6">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="col-md-6">
+            <canvas id="canvas"></canvas>
         </div>
     </div>
 </section>
@@ -152,13 +162,14 @@
             </tr>
         </thead>
         <tbody>
+            <input type="hidden" class="TotalAkun" value="<?php echo count($data["user"]) ?>">
             <?php $i = 1; ?>
             <?php foreach ($data["user"] as $result) : ?>
                 <tr>
                     <td><?php echo $i; ?></td>
                     <td><?php echo $result["email"]; ?></td>
                     <td><?php echo $result["username"]; ?></td>
-                    <td style="color: <?php echo($result["status"] == 1) ? "green" : "red" ?>;"><?php echo($result["status"] == 1) ? "Online" : "Offline" ?></td>
+                    <td style="color: <?php echo ($result["status"] == 1) ? "green" : "red" ?>;"><?php echo ($result["status"] == 1) ? "Online" : "Offline" ?></td>
                     <td>
                         <a href="<?php echo BASEURL; ?>/staffpage/Logout/<?php echo $result["id"]; ?>" class="hapusData">
                             <button type="submit" name="hapusData" onclick="return confirm('Yakin!')">Logout</button>
