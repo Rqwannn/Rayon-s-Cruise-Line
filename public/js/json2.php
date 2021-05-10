@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 
 
-$conn = mysqli_connect("localhost","root","","rayon");
+$conn = mysqli_connect("localhost", "root", "", "rayon");
 $data = $_POST["id_pemesanan"];
 $pesan = mysqli_query($conn, "SELECT * FROM tiket_tersedia WHERE id = $data");
 $results = mysqli_fetch_assoc($pesan);

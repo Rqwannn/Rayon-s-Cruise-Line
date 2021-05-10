@@ -13,5 +13,3 @@ class Kapal Extends Controller{
         $this->view("template/footerKapal");
     }
 }
-
-?>

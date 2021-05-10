@@ -122,7 +122,7 @@ content2.addEventListener("click", function () {
 
 const submitValidasi = document.getElementById("submit");
 
-submitValidasi.addEventListener("click", function(e){
+submitValidasi.addEventListener("click", function (e) {
   var tiket = document.getElementById("tiket");
   var berangkat = document.getElementById("berangkat");
   var tujuan = document.getElementById("tujuan");
@@ -136,23 +136,28 @@ submitValidasi.addEventListener("click", function(e){
   const sectionEmpat = document.querySelector(".section-4");
   const sectionTiket = document.querySelector(".section-info-tiket");
   const scrollDown = document.querySelector(".scroll-info-tiket");
-  
-  if (tiket.value.length > 0 && berangkat.value.length > 1 && tujuan.value.length > 1 && tanggal.value.length > 1) {
-      e.preventDefault();
-        text.innerHTML = "Pencarian Sedang Di Proses";
-        text.style.color = "green";
-        text.style.display = "block";
-        section.style.display = "none";
-        sectionCenter.style.display = "none";
-        sectionSatu.style.display = "none";
-        sectionDua.style.display = "none";
-        sectionTiga.style.display = "none";
-        sectionEmpat.style.display = "none";
-        sectionTiket.style.height = "150vh";
-        sectionTiket.style.margin = "0 0 300px 0";
-        scrollDown.style.transform = "translateY(-10%)";
-    }
-})
+
+  if (
+    tiket.value.length > 0 &&
+    berangkat.value.length > 1 &&
+    tujuan.value.length > 1 &&
+    tanggal.value.length > 1
+  ) {
+    e.preventDefault();
+    text.innerHTML = "Pencarian Sedang Di Proses";
+    text.style.color = "green";
+    text.style.display = "block";
+    section.style.display = "none";
+    sectionCenter.style.display = "none";
+    sectionSatu.style.display = "none";
+    sectionDua.style.display = "none";
+    sectionTiga.style.display = "none";
+    sectionEmpat.style.display = "none";
+    sectionTiket.style.height = "150vh";
+    sectionTiket.style.margin = "0 0 300px 0";
+    scrollDown.style.transform = "translateY(-10%)";
+  }
+});
 
 var tutupInfo = document.querySelector("#close-info");
 var regis = document.getElementById("text-js");
@@ -224,4 +229,12 @@ const secondBtn = document.querySelector(".edit-card-circle");
 
 secondBtn.addEventListener("click", () => {
   scrollTop(".header-img", 3000);
+});
+
+$(function() {
+  $( "#tanggal" ).datepicker(
+      {
+          minDate: new Date()
+      }
+  );
 });

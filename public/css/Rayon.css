@@ -146,7 +146,7 @@ body {
 .navbar .menu-links {
   position: absolute;
   top: 27px;
-  left: 520px;
+  left: 560px;
 }
 
 .navbar .menu-links ul {
@@ -346,7 +346,7 @@ body {
 .menu-tujuan-second {
   position: absolute;
   right: 20px;
-  bottom: -260px;
+  bottom: -225px;
   background: #1877f2;
   padding: 10px;
   width: 55%;
@@ -357,7 +357,7 @@ body {
 .menu-tujuan-third {
   position: absolute;
   right: 20px;
-  bottom: -260px;
+  bottom: -225px;
   background: #1877f2;
   padding: 10px;
   width: 55%;
@@ -4702,4 +4702,15 @@ textarea {
   cursor: pointer;
   top: 120px;
   width: 30px;
+}
+
+.ui-datepicker-next,
+.ui-datepicker-prev {
+  background: #ced4da;
+  cursor: pointer;
+}
+
+.ui-datepicker-next:hover,
+.ui-datepicker-prev:hover {
+  background: #ced4da;
 }

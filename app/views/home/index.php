@@ -61,7 +61,7 @@ $email = $VerifikasiAkun["email"];
                     </div>
                     <div class="inputbx">
                         <label for="tanggal">Tanggal Berangkat :</label>
-                        <input type="date" name="tanggal" id="tanggal">
+                        <input type="text" name="tanggal" id="tanggal">
                     </div>
                     <button type="submit" id="submit">Cari Tiket</button>
                 </div>

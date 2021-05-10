@@ -153,7 +153,7 @@ function Register(e){
     var gender = document.getElementById( "gender" );
     var text = document.getElementById( "text-regis" );
 
-    if(nama.value.length > 2 && email.value.length > 2 && password2.value.length >= 19 && password3.value.length >= 19
+    if(nama.value.length > 2 && email.value.length > 2 && password2.value.length >= 18 && password3.value.length >= 18
       && tiket.value.length > 0 && dewasa.value.length > 0  && anak.value.length > 0  && gender.value.length > 4 ){
         text.innerHTML = "Pemesanan Berhasil Di Proses Liat Bukti Pemesanan Di Bawah";
         text.style.color = "green";

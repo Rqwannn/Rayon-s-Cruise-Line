@@ -40,6 +40,7 @@ if (mysqli_num_rows($userSelection) === 1) {
     <title><?php echo $data["judul"]; ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo BASEURL; ?>/css/Rayon.css">
     <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo BASEURL; ?>/css/jquery-ui.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <script src="https://kit.fontawesome.com/d1a508a7c1.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -62,14 +63,9 @@ if (mysqli_num_rows($userSelection) === 1) {
                                                                             'color' : '' ?>">Pelayaran</a></li>
             </ul>
             <hr style="background:#000; width: 50px; height: 1px; position: absolute; border: none;
-             left: 510px; top: 10px; transform: rotate(90deg); border-radius: 5px;">
+             left: 525px; top: 10px; transform: rotate(90deg); border-radius: 5px;">
         </div>
         <div class="button-btn">
-            <label class="masuk" id="right-slide">
-                <a href="<?php echo BASEURL; ?>/massage/<?php echo $_SESSION["username"]; ?>">
-                    <i class="fas fa-comment-alt"></i>
-                </a>
-            </label>
             <label class="back" id="left-slide">
                 <a href="<?php echo BASEURL; ?>/logout">
                     <i class="fas fa-sign-out-alt" id="slide-left"></i>
