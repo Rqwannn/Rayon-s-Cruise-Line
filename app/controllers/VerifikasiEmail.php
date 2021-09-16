@@ -41,8 +41,8 @@ class VerifikasiEmail Extends Controller{
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = "mohwannn1@gmail.com";
-                $mail->Password = "@python944";
+                $mail->Username = "youremail@gmail.com";
+                $mail->Password = "secret";
                 $mail->Port = 465;
                 $mail->SMTPSecure = "ssl";
 
